@@ -15,6 +15,7 @@
 	 */
 	
 	import Demo from '$lib/Demo.svelte'
+	import '../global.css'
 </script>
 
 <Demo />
