@@ -16,6 +16,15 @@
 	
 	import Demo from '$lib/Demo.svelte'
 	import '../global.css'
+	import { afterUpdate } from 'svelte';
+
+	let show = false;
+
+	afterUpdate(() => {
+		show = true
+	})
 </script>
 
-<Demo />
+{#if show}
+	<Demo />
+{/if}
