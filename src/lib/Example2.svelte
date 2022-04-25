@@ -13,12 +13,16 @@
 		<li><p use:reveal={{ transition: "slide", delay: 3500 }}>Slide</p></li>
 		<li><p use:reveal={{ transition: "fade", delay: 4000 }}>Fade</p></li>
 		<li><p use:reveal={{ transition: "blur", delay: 4500 }}>Blur</p></li>
-		<li><p use:reveal={{ transition: "scale", delay: 5000 }}>Scale</p></li>
-		<li><p use:reveal={{ transition: "spin", delay: 5500 }}>Spin</p></li>
+		<li><p use:reveal={{ transition: "scale", delay: 5000 }} class="width-fit-content">Scale</p></li>
+		<li><p use:reveal={{ transition: "spin", delay: 5500 }} class="width-fit-content">Spin</p></li>
 	</ul>	
 </div>
 
 <style>	
+	.width-fit-content {
+		width: fit-content;
+	}
+	
 	li p {
 		line-height: 0;
 	}

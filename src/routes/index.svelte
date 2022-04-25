@@ -13,18 +13,19 @@
 	 *
 	 * Have a good day!
 	 */
-	
+	import {afterUpdate} from 'svelte'
 	import Demo from '$lib/Demo.svelte'
 	import '../global.css'
-	import { afterUpdate } from 'svelte';
 
-	let show = false;
+	// let show = false;
 
-	afterUpdate(() => {
-		show = true
-	})
+	// afterUpdate(() => {
+	// 	show = true
+	// })
 </script>
 
-{#if show}
+<!-- {#if show}
 	<Demo />
-{/if}
+{/if} -->
+
+<Demo />
